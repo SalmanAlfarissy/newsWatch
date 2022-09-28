@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 20 Agu 2022 pada 12.18
+-- Waktu pembuatan: 28 Sep 2022 pada 13.43
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 8.0.15
 
@@ -32,7 +32,7 @@ CREATE TABLE `berita` (
   `id_kategori` int(11) NOT NULL,
   `users_id` int(11) NOT NULL,
   `judul` varchar(100) NOT NULL,
-  `content` text NOT NULL,
+  `content` mediumtext NOT NULL,
   `foto` text NOT NULL,
   `tanggal` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -42,8 +42,7 @@ CREATE TABLE `berita` (
 --
 
 INSERT INTO `berita` (`id`, `id_kategori`, `users_id`, `judul`, `content`, `foto`, `tanggal`) VALUES
-(2, 5, 2, 'Suasana Rumah Irjen Ferdy Sambo Pascapenetapan Tersangka Istrinya', '<p>Jakarta - Istri Irjen Ferdy Sambo, Putri Candrawathi (PC), ditetapkan sebagai tersangka terkait kasus pembunuhan berencana Brigadir Nopriansyah Yosua Hutabarat atau Brigadir J. Pascapenetapan tersangka, rumahnya terlihat sepi.<br>Pantauan detikcom di lokasi, Jumat (19/8/2022) pukul 19.25 WIB, tak tampak aktivitas di rumah pribadi Irjen Ferdy Sambo dan Putri Candrawathi di Jalan Saguling III, Duren Tiga, Jakarta Selatan (Jaksel). Tidak terlihat juga penjagaan dari aparat kepolisian sejak penetapan Putri sebagai tersangka sedari pukul 14.15 WIB.</p>\r\n<p>Hanya terlihat seorang petugas satpam di kediaman Irjen Ferdy Sambo dan Putri. Petugas satpam itu berjaga di depan rumah.</p>', '2022-08-19-566079408.jpeg', '2022-08-20 04:58:50'),
-(3, 1, 2, 'Ini Alasan Casemiro Menerima Tawaran Manchester United', '<p><strong>Jakarta</strong> - Manchester United kembali akan kedatangan pemain baru yang mengisi lini tengah. Salah satu pemain paling berpengalaman di Real Madrid, Casemiro, dikabarkan sudah menerima tawaran Manchester United.&nbsp;</p>\r\n<p>Di sisi lain, Real Madrid tidak keberatan untuk memanfaatkan momen ini dengan melepas gelandang berusia 30 tahun tersebut. Los Merengues meraih berbagai trofi bersama Casemiro. Sebaliknya, Real Madrid pula yang membesarkan karier atau nama pemain asal Brasil tersebut.<br>Kini, Real Madrid akan menerima keuntungan dari penjualan Carlos Casemiro. Nilai transfernya diprediksi antara 60 juta euro hingga 70 juta euro. Jika harga kemungkinan sudah diketahui dengan kisaran tersebut namun soal motif yang membuat Casemiro bersedia menerima tawaran dari Manchester United belum banyak terungkap.&nbsp;</p>\r\n<p>Seperti diketahui, Manchester United saat ini dalam situasi krisis internal menyusul kekalahan dua kali beruntun di awal Liga Inggris 2022-2023 ini. Ruang ganti Manchester United diyakini kembali tidak kondusif karena hasil tersebut. Ditambah dengan sikap fans yang menuntut pengunduran diri pemilik klub.</p>\r\n<p>Semua itu sangat bertolak belakang dengan situasi yang ada di Real Madrid. Apalagi, Casemiro bergabung dengan klub yang justru tidak bermain di Liga Champions melainkan di Liga Europa.&nbsp;</p>\r\n<p>Oleh sebab itu, tidak sedikit pihak yang terkejut dengan keputusan Casemiro yang mau keluar dari klub sebesar Real Madrid. Meski demikian, nama besar Manchester United tetaplah menjadi pertimbangan lain dari alasan keputusan Casemiro.</p>\r\n<p>Lalu, ada tiga faktor utama yang tampaknya dapat jadi alasan mengapa Casemiro meninggalkan Real Madrid dan memilih bergabung ke Manchester United.</p>\r\n<p>1. Kariernya di Real Madrid sudah Selesai</p>\r\n<p>Alasan pertama adalah Casemiro sudah pasti berpikir bahwa waktunya di Real Madrid sudah selesai. Pasalnya, ia sudah memenangkan hampir semua gelar dengan jumlah yang mengesankan. Lebih dari 15 gelar besar diraih Casemiro sejak bergabung ke Real Madrid pada 2015.</p>\r\n<p>Termasuk tentu saja lima trofi Liga Champions yang telah diraihnya bersama Real Madrid. Carlos Casemiro memerankan peran penting dari semua pencapaian Real Madrid meraih gelar bersama dirinya.<br>2. Tantangan Baru</p>\r\n<p>Pelatih Real Madrid, Carlo Ancelotti, pada Jumat, 19 Agustus 2022 telah mengonfirmasi bahwa kepergian Casemiro ke Manchester United karena ingin tantangan baru. Alasan tantangan baru ini sebenarnya telah menjawab pertanyaan mengapa dirinya mau bermain di klub yang tidak tampil di Liga Champions.</p>\r\n<p>Soal gelar Liga Champions, Casemiro seperti yang dijelaskan di atas telah meraihnya. Casemiro salah satu gelandang terbaik yang pernah bermain di Real Madrid di ajang Liga Champions.</p>\r\n<p>Kini, bermain di Liga Europa, ia bakal merasa tanpa beban. Sebaliknya, dengan menerima tawaran Manchester United, ini menjadi tantangan bagi Casemiro untuk membantu klub raksasa Liga Inggris ini bangkit kembali.</p>\r\n<p>3. Gaji yang Besar</p>\r\n<p>Terakhir atau faktor gaji. Besarnya gaji yang ditawarkan Manchester United kepada Casemiro dikabarkan melebihi yang diterima dari Real Madrid. Menurut The Sun, Manchester United akan memberikan gaji dua kali lebih besar dari yang diterima Casemiro di Real Madrid.</p>\r\n<p>Bintang asal Brasil ini, disebut-sebut akan menerima 18,2 juta pounds per tahun (sekitar Rp 316,585 miliar) atau 350 ribu pounds (sekitar Rp 6,154 miliar) per pekannya. Jumlah tersebut menempatkannya di posisi ketiga pemain Manchester United dengan gaji terbesar.</p>', '2022-08-20-1861974906.jpg', '2022-08-20 05:01:00');
+(16, 6, 4, 'Hasil Indonesia Vs Curacao 2-1: Witan \"Menari\", Garuda Menang berkat Gol Dendy', '<p><strong>NewsWatch.com</strong> &ndash; Timnas Indonesia dipastikan berhasil meraih kemenangan 2-1 atas Curacao dalam FIFA Matchday. Laga timnas Indonesia vs Curacao dalam jadwal FIFA Matchday 2022 diselenggarakan di Stadion Pakansari, Cibinong, Bogor, pada Selasa (27/9/2022).</p>\r\n<p>Pertandingan ini berlangsung dengan tensi tinggi. Bahkan, wasit sempat mengeluarkan satu kartu merah dari kantongnya buat pemain Curacao, Juninho Bacuna. Terlepas dari itu, timnas Indonesia berhasil memenangi pertandingan 2-1 atas Curacao setelah Dimas Drajad dan Dendy Sulistyawan mencatatkan namanya di papan skor.</p>\r\n<p>Di lain sisi, Curacao menyarangkan satu gol ke gawang timnas Indonesia melalui aksi Jeremy Antonisse.</p>\r\n<p>Timnas Indonesia langsung memberikan kejutan. Ya, skuad Garuda mampu membobol gawang Curacao melalui Dimas Drajad pada menit ke-3. Semuanya bermula dari tembakan keras Witan Sulaeman dari luar kotak penalti yang tak mampu ditepis secara sempurna oleh kiper Curacao, Tyrick Bodak. Dimas Drajad berada di posisi yang tepat setelah bola tepisan Tyrick Bodak bergerak liar. Ia pun berhasil menceploskan bola ke gawang Curacao guna membuat Indonesia unggul 1-0.</p>\r\n<p>&nbsp;</p>', '2022-09-28-722036797.jpeg', '2022-09-28 09:22:51');
 
 -- --------------------------------------------------------
 
@@ -61,10 +60,10 @@ CREATE TABLE `kategori` (
 --
 
 INSERT INTO `kategori` (`id`, `nama`) VALUES
-(1, 'Olahraga'),
 (2, 'Gaya Hidup'),
 (4, 'Makanan'),
-(5, 'Kriminal');
+(5, 'Kriminal'),
+(6, 'Olahraga');
 
 -- --------------------------------------------------------
 
@@ -86,7 +85,6 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `nama`, `username`, `password`, `level`, `foto`) VALUES
-(2, 'Salman Alfarissy', 'salman', '827ccb0eea8a706c4c34a16891f84e7b', 0, '2022-08-19-755062346.png'),
 (4, 'admin', 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 0, '2022-08-19-1294782439.jpeg');
 
 --
@@ -97,7 +95,9 @@ INSERT INTO `users` (`id`, `nama`, `username`, `password`, `level`, `foto`) VALU
 -- Indeks untuk tabel `berita`
 --
 ALTER TABLE `berita`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_kategori` (`id_kategori`),
+  ADD KEY `users_id` (`users_id`);
 
 --
 -- Indeks untuk tabel `kategori`
@@ -119,19 +119,30 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT untuk tabel `berita`
 --
 ALTER TABLE `berita`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT untuk tabel `kategori`
 --
 ALTER TABLE `kategori`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+--
+
+--
+-- Ketidakleluasaan untuk tabel `berita`
+--
+ALTER TABLE `berita`
+  ADD CONSTRAINT `berita_ibfk_1` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `berita_ibfk_2` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
